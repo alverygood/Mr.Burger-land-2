@@ -1,0 +1,102 @@
+.order {
+    background: url("../img/orders/background.jpg") center center / cover
+    no-repeat;
+    font-family: 'ubuntu';
+}
+
+.container__order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.order__container {
+    padding: rem(140px) rem(113px);
+    position: inherit;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  
+    @include tablets {
+    height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.form__left {
+    width: 50%;
+    margin-right: rem(20px);
+
+    @include tablets {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+.section-title_order {
+    justify-content: center;
+}
+
+.form__right {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+.form__block-title {
+    color: #fff;
+  }
+  
+  .form__input {
+    border: none;
+    border-radius: rem(5px);
+    padding: rem(5px);
+    width: 100%;
+  }
+  
+  .form__row {
+    display: flex;
+    margin-bottom: rem(20px);
+  }
+
+  .form__row--right {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .form__row--right-input {
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .form__block {
+    flex: 1;
+    margin-right: rem(20px);
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .form__btn {
+      width: 30%;
+      text-align: center;
+  }

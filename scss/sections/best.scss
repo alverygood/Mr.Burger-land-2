@@ -1,0 +1,116 @@
+svg {
+    justify-content: center;
+    align-items: center;
+    width: rem(100px);
+    height: (100px);
+
+    @include phones {
+        width: 8rem;
+        height: 10rem;
+    }
+}
+
+.best {
+    background: url(../img/best/background.jpg) center center / cover no-repeat;
+    display: flex;
+    display: flex;
+    //justify-content: center;
+    flex-direction: column;
+}
+
+.best__head {
+    display: flex;
+    width: 70%;
+    margin-top: 15%;
+    margin-bottom: rem(60px);
+
+}
+
+.best__content--header {
+    color: $gray;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.best__content--head {
+    font-size: 1.5rem;
+    font-family: 'Lifehack';
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.best__content {
+    display: flex;
+    flex-direction: column;    
+    width: 70%;
+    
+}
+
+.best__content--descr {
+    color: $gray;
+    text-align: center;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
+    font-size: 0.875rem;
+
+    @include tablets {
+        padding-bottom: rem(20px);
+        
+    }
+
+    @include phones {
+        padding-bottom: rem(20px);
+      
+  }
+}
+
+.best__list {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        
+    }
+
+    @include phones {
+      flex-direction: column;
+      
+      
+  }
+}
+
+.best__item {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.meat {
+    fill: $orange;
+    transition: .5s linear fill;
+    &:hover {
+        fill: $orange-dark;
+    }
+}
+
+.hand {
+    fill: $yellow;
+    transition: .5s linear fill;
+    &:hover {
+        fill: $yellow-dark;
+    }
+}
+
+.natural {
+    fill: $green;
+    transition: .5s linear fill;
+    &:hover {
+        fill: $green-dark;
+    }
+}
+

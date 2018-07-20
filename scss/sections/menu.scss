@@ -1,0 +1,133 @@
+.menu {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+    background: url(../img/menu/background.jpg) center center / cover no-repeat;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.title--menu {
+    font-family: 'Gagalin';
+    font-style: rem(72px);
+	display: flex;
+	position: absolute;
+	left: 0;
+	margin-left: rem(88px);
+    margin-top: -22.875rem;
+    color: #fff;
+}
+
+.menu__list {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.menu__item {
+	transition: 0.5s;
+	display: flex;
+	flex-flow: row nowrap;
+	position: relative;
+	height: 100vh;
+	background-color: #141414;
+	overflow: hidden;
+	
+	&.active > .menu__desc {
+		max-width: rem(540px);
+		padding: rem(61px) rem(35px);
+
+		@include phones {
+			padding: 1rem 1rem;
+		}
+	}
+
+	@include tablets {
+		min-width: 4.875rem;
+
+		&.active > .menu__desc {
+			max-width: 100vw;
+		}
+
+		&.active .menu__name {
+			color: #f9b43b;
+		}
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(20, 20, 20, 0.7);
+	}
+
+	@include phones {
+		min-width: 3.5rem;
+	}
+}
+
+.show {
+	opacity: 1;
+}
+
+.menu__img {
+	max-width: rem(78px);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include phones {
+		max-width: 3.5rem;
+	}
+}
+
+@each $number in (1, 2, 3) {
+	.menu__img--#{$number} {
+		background-image: url(../../img/menu/photo-#{$number}.jpg);
+	}
+
+}
+
+.menu__name {
+	line-height: rem(78px);
+	font-family: 'Gagalin';
+	font-size: rem(40px);
+	text-transform: uppercase;
+	color: #fff;
+	min-width: 100vh;
+	text-align: center;
+	transform: rotate(-90deg);
+
+	@include tablets {
+		text-align: initial;
+		padding-left: rem(48px);
+	}
+
+	@include phones {
+		padding-left: rem(80px);
+	}
+}
+
+.menu__desc {
+	transition: 0.5s;
+	max-width: 0;
+	padding: 0;
+	display: block;
+	height: 100vh;
+	background-color: rgb(47, 50, 52);
+	opacity: 0.929;
+	color: #fff;
+	font-family: 'ubuntu';
+	font-weight: 300;
+	font-size: rem(14px);
+	line-height: rem(24px);
+
+	@include phones {
+		font-size: rem(13px);
+	}
+}

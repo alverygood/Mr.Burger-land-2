@@ -1,0 +1,137 @@
+.hero {
+    background: url(../img/hero/background.jpg) center center / cover no-repeat;
+    display: flex;
+    display: flex;
+    //justify-content: center;
+    flex-direction: column;
+}
+
+.section__content {
+    width: 70%;
+}
+
+  .header {
+    //margin-bottom: auto;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: rem(80px);
+  }
+  
+  .header__logo {
+    margin-right: auto;
+  }
+  
+  .header__nav {
+    flex-direction: row;
+
+    @include tablets {
+        display: none;
+    }
+  }
+  
+  .header__list {
+    display: flex;
+  }
+  
+  .header__item {
+    font-family: 'Ubuntu';
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    list-style: none;
+    
+  }
+
+  .header__link {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+  }
+
+  #Capa_1:hover {
+          fill: gray;
+  }
+
+  .arrow {
+      position: relative;
+      text-align: center;
+      fill: #fff;
+      top: rem(200px);
+      left: rem(100px);
+  }
+  
+.hamburger__menu {
+    display: none;
+    margin-left: rem(20px);
+
+    @include tablets {
+        display: block;
+    }
+}
+
+  .hero__content {
+      display: flex;
+      width: 70%;
+      margin-top: 10%;
+      
+      @include tablets {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+      @include phones {
+        flex-direction: column;
+        
+        
+    }
+
+  }
+
+  .hero__drops-burger {
+
+    @include phones {
+        width: rem(351px);
+        //height: rem(320px);
+
+    }
+ 
+  }
+
+  .hero__content--right {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+ .hero__content--header {
+    color: $yellow;
+    text-align: center;
+
+    @include phones {
+        font-size: rem(52px);
+
+    }
+ }
+
+ .hero__content--descr {
+     color: #fff;
+     font-family: 'Lifehack';
+     font-size: 4.0625rem;
+     text-align: center;
+
+     @include phones {
+        font-size: 2rem;
+
+    }
+ }
+
+ 

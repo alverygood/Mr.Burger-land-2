@@ -1,0 +1,25 @@
+@import "layout/layout.scss";
+
+//misc
+
+@import "misc/variables.scss";
+@import "misc/mixins.scss";
+@import "misc/normalize.scss";
+@import "misc/fonts.scss";
+@import "misc/media.scss";
+
+//components
+
+@import "components/btn.scss";
+@import "components/title.scss";
+
+//sections
+
+@import "sections/hero.scss";
+@import "sections/best.scss";
+@import "sections/burgers.scss";
+@import "sections/map.scss";
+@import "sections/menu.scss";
+@import "sections/order.scss";
+@import "sections/reviews.scss";
+@import "sections/team.scss";

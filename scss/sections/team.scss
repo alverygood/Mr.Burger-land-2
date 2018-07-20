@@ -1,0 +1,112 @@
+.team {
+    background: url(../img/team/background.jpg) center center / cover no-repeat;
+    display: flex;
+}
+
+.open {
+    display:flex;
+}
+
+.team__right {
+    height: 100vh;
+    background: rgba(48, 51, 52, 0.9);
+    width: 50%;
+    margin-left: auto;
+
+    @include tablets {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include phones {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      
+  }
+.team__content {
+    align-items: center;
+    justify-content: center;
+    margin: 30%;
+}
+
+}
+
+.team__title {
+
+
+    @include tablets {
+        font-size: rem(36px);
+        
+    }
+
+    @include phones {
+        font-size: rem(36px);
+      
+  }
+}
+
+#accordion {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;    
+}
+
+
+.accordion__title {
+    font-family: 'Gagalin';
+    font-size: 18px;
+    color:#f9b43b;;
+    margin-bottom: rem(20px);
+
+}
+
+.accordion__title.active + .accordion__cont {
+    display: flex;
+    color: #fff;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      
+  }
+}
+
+.accordion__cont {
+    display: none;
+
+}
+
+.acco__img {
+    border-radius: 50%;
+}
+
+.accordion__cont-item {
+    color: #fff;
+    font-family: 'Ubuntu';
+}
+
+.accordion__cont-header {
+    font-weight: bold;
+    margin-left: rem(25px);
+    margin-bottom: rem(20px);
+}
+
+.accordion__cont-text {
+    margin-left: rem(25px);
+}
