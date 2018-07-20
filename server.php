@@ -41,7 +41,7 @@
     "MIME-Version: 1.0" . "\r\n" .
     "Content-type: text/html; charset=UTF-8" . "\r\n";
 
-	$mail = mail('root@localhost.com', 'Заказ', $mail_message, $headers);
+	$mail = mail('yamov230@gmail.com', 'Заказ', $mail_message, $headers);
 
 	if ($mail) {
 		echo 'done';
