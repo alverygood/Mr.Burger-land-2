@@ -37,16 +37,18 @@
 }
 
 .team__title {
-
+    margin-top: 15%;
+    margin-left: 5%;
 
     @include tablets {
         font-size: rem(36px);
+        margin-top: 15%;
         
     }
 
     @include phones {
         font-size: rem(36px);
-      
+        margin-top: 15%;
   }
 }
 
