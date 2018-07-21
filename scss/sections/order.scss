@@ -27,6 +27,19 @@
     }
   }
 
+.order__title {
+
+    @include tablets {
+       
+          text-align: center;
+        }
+
+    @include phones {
+        font-size: rem(36px);
+          text-align: center;
+         }
+}
+
 .form {
     display: flex;
     flex-direction: row;

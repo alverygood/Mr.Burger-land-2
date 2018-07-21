@@ -10,8 +10,8 @@ svg {
     }
 
     @include phones {
-        width: rem(70px);
-        height: rem(70px);
+        width: 5.375rem;
+        height: 10.375rem;
       
   }
 }
@@ -45,6 +45,7 @@ svg {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 .best__content {

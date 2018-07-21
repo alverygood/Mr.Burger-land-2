@@ -4,6 +4,23 @@
     display: flex;
     //justify-content: center;
     flex-direction: column;
+
+    @include tablets {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include phones {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      
+  }
 }
 
 .section__content {

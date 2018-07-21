@@ -203,6 +203,34 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .hero {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 480px) {
+    .hero {
+      width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .section__content {
   width: 70%; }
@@ -344,8 +372,8 @@ svg {
       height: 5rem; } }
   @media screen and (max-width: 480px) {
     svg {
-      width: 4.375rem;
-      height: 4.375rem; } }
+      width: 5.375rem;
+      height: 10.375rem; } }
 
 .best {
   background: url(../img/best/background.jpg) center center/cover no-repeat;
@@ -383,7 +411,8 @@ svg {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  text-align: center; }
 
 .best__content {
   display: -webkit-box;
@@ -849,8 +878,8 @@ img[alt="метка местоположения3"] {
   display: flex;
   position: absolute;
   left: 0;
-  margin-left: 5.5rem;
-  margin-top: -22.875rem;
+  margin-left: 3.625rem;
+  margin-top: -19.875rem;
   color: #fff; }
 
 .menu__list {
@@ -998,6 +1027,15 @@ img[alt="метка местоположения3"] {
       height: 100%;
       width: 100%;
       text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .order__title {
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .order__title {
+    font-size: 2.25rem;
+    text-align: center; } }
 
 .form {
   display: -webkit-box;
