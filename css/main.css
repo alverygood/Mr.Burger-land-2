@@ -1245,7 +1245,7 @@ img[alt="метка местоположения3"] {
     justify-content: center; }
 
 .team__title {
-  margin-top: 10;
+  margin-top: 10%;
   margin-left: 5%; }
   @media screen and (max-width: 768px) {
     .team__title {
