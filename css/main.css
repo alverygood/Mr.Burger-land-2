@@ -1200,8 +1200,7 @@ img[alt="метка местоположения3"] {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    margin: 15%; }
+    justify-content: center; }
 
 @media screen and (max-width: 768px) {
   .team__title {
