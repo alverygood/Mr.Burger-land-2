@@ -336,8 +336,8 @@ svg {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 6.25rem;
-  height: 100px; }
+  width: 4.375rem;
+  height: 4.375rem; }
   @media screen and (max-width: 768px) {
     svg {
       width: 5rem;

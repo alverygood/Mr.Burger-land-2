@@ -1,8 +1,8 @@
 svg {
     justify-content: center;
     align-items: center;
-    width: rem(100px);
-    height: (100px);
+    width: rem(70px);
+    height: rem(70px);
 
     @include tablets {
         width: rem(80px);
