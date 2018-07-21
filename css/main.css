@@ -338,10 +338,14 @@ svg {
   align-items: center;
   width: 6.25rem;
   height: 100px; }
+  @media screen and (max-width: 768px) {
+    svg {
+      width: 5rem;
+      height: 5rem; } }
   @media screen and (max-width: 480px) {
     svg {
-      width: 8rem;
-      height: 10rem; } }
+      width: 4.375rem;
+      height: 4.375rem; } }
 
 .best {
   background: url(../img/best/background.jpg) center center/cover no-repeat;
